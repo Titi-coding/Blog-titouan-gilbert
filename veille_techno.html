@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La veille technologique</title>
+    <link rel="stylesheet" href="veille_techno.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding-top: 0px;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Image de fond */
+      background-image: url(ChatGPT\ Image\ 30\ nov.\ 2025\,\ 14_06_59.png);
+      background-repeat: no-repeat; /* éviter la répétition */
+      background-position: center; /* centrer l'image */
+      background-size: cover; /* adapte l'image à l'écran */
+    }
+
+    .bande {
+      display: flex;
+      align-items: center;
+      background-color: #000000;
+      padding: 10px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      position: fixed; /* toujours en haut de l'écran */
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 100%; /* prendre toute la largeur */
+      z-index: 1000; /* rester au-dessus des autres éléments */
+      display: flex;
+      gap: 25px;
+      flex-direction: line;
+      text-decoration: none;
+      justify-content: space-between;
+    }
+    .bande h1 {
+      padding-left: 1em;
+    }
+
+    .dropdown a {
+      text-decoration: none;
+      margin-left: 1.5em;
+      color: white;
+    }
+
+    .dropdown-button {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .dropdown a:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Conteneur des liens cachés */
+    .dropdown-content {
+      display: none; /* caché par défaut */
+      position: absolute;
+      background-color: #000000;
+      min-width: 13em;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      display: block;
+      margin: 1em;
+    }
+  </style>
+  <header>
+    <div class="bande">
+      <a class="lien_main_page" href="index.html">Blog Titouan Gilbert</a>
+
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">
+          Projets
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="projets_premiere_annee.html">Première année</a>
+          <a href="projets_deuxieme_annee.html">Deuxième année</a>
+        </div>
+        <a href="stage.html">Stages</a>
+        <a href="veille_techno.html">Veille Technologique</a>
+        <a href="competences.html">Tableau de compétences</a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="explain_veille">
+      <h2>La veille technologique</h2>
+      <h4>Les processeurs et cartes graphiques</h4>
+      <p>
+        D'une année à l'autre, que ce soit de petits changements, les composants
+        sont plus puissants et permettent d'effectuer encore plus de tâches
+        simultanément. Revenons en 1971 à l'arrivée des premiers processeurs
+        comme le Intel 4004.
+      </p>
+      <p>
+        Ils étaient mono-utilisateur et mono-tâche, c'est à dire que chaque
+        tâche était effectuée les unes après les autres sans pouvoir en gérer
+        plusieurs à la fois. Le fait qu'ils soient mono-utilisateur au contraire
+        d'aujourd'hui était handicapant car il y avait une seule session pour
+        plusieurs personnes, d'où l'évolution de maintenant.
+      </p>
+      <p>
+        Parlons du côté des caractéristiques. Les processeurs avaient une très
+        faible capacité qui leur permettait de faire une petite tache ne
+        consommant pas trop arrive à présent à plus de 4GHz de fréquence de
+        noyau, permettant un multi-tâche très soutenu et rapide !
+      </p>
+    </div>
+
+    <footer>
+      <h4>Blog de Titouan Gilbert</h4>
+      <p>Tous droits réservés à Titouan Gilbert</p>
+      <a href="https://titi-coding.github.io/">Mon portfolio</a>
+      <a href="CV_2025-12-02_Titouan_Gilbert.pdf">Mon CV</a>
+    </footer>
+  </body>
+
+  <script>
+    // Fonction pour afficher/masquer la liste
+    function toggleDropdown() {
+      const dropdown = document.getElementById("myDropdown");
+      dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Optionnel : fermer le menu si l'utilisateur clique ailleurs
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropdown-button")) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          if (dropdowns[i].style.display === "block") {
+            dropdowns[i].style.display = "none";
+          }
+        }
+      }
+    };
+  </script>
+</html>

@@ -1,0 +1,63 @@
+html {
+  margin-top: 3rem;
+}
+
+.lien_main_page {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.explain_veille {
+  color: rgb(0, 0, 0);
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: rgb(238, 237, 237);
+  background: transparent;
+  backdrop-filter: blur(12px); /* flou derrière le bouton */
+  -webkit-backdrop-filter: blur(0px);
+}
+
+.explain_veille p {
+  margin-top: 4vh;
+  font-size: 20px;
+  padding: 20px;
+}
+
+footer {
+  color: rgb(0, 0, 0);
+  max-width: 900px;
+  margin: 60px auto 5%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background: transparent;
+  backdrop-filter: blur(12px); /* flou derrière le bouton */
+  -webkit-backdrop-filter: blur(0px);
+}
+
+footer h4 {
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 19px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-bottom: 20em;
+  color: black;
+  padding: 1em;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(179, 90, 179);
+  margin-right: 2em;
+}
