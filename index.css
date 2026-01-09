@@ -9,7 +9,7 @@ html {
 }
 
 .explain_bts {
-  color: #dbe8ff;
+  color: rgb(214, 214, 214);
   max-width: 900px;
   margin: 60px auto 5%;
   background-color: white;
@@ -60,13 +60,18 @@ footer p {
 
 footer a {
   text-decoration: none;
-  margin-bottom: 20em;
+  margin-bottom: 1em;
   color: black;
   padding: 1em;
   border-radius: 12px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   background-color: rgb(179, 90, 179);
   margin-right: 2em;
+  display: inline-flex;
 }
 
-
+footer a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
