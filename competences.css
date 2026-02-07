@@ -48,7 +48,6 @@ html {
 .explain_tableau a:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: all 0.3s ease;
 }
 
 footer {
@@ -94,5 +93,6 @@ footer a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
 
 
