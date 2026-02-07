@@ -34,19 +34,29 @@
       width: 100%; /* prendre toute la largeur */
       z-index: 1000; /* rester au-dessus des autres éléments */
       display: flex;
-      gap: 25px;
       flex-direction: line;
       text-decoration: none;
       justify-content: space-between;
     }
+
     .bande h1 {
-      padding-left: 1em;
+      font-size: 1.5em;
     }
 
+  .dropdown {
+      display: flex;
+      align-items: center;
+    }
+    
     .dropdown a {
       text-decoration: none;
       margin-left: 1.5em;
       color: white;
+      transition: amm 0.3s ease-in-out;
+    }
+
+    .dropdown a:hover {
+      transform: scale(1.1);
     }
 
     .dropdown-button {
@@ -60,9 +70,8 @@
       font-weight: bold;
     }
 
-    .dropdown a:hover {
+    .dropdown-button:hover {
       transform: scale(1.1);
-      transition: all 0.3s ease-in-out;
     }
 
     /* Conteneur des liens cachés */
@@ -81,6 +90,11 @@
       text-align: center;
       display: block;
       margin: 1em;
+    }
+
+    .dropdown-content a:hover {
+      transform: scale(1.1);
+      color: white;
     }
   </style>
   <header>
@@ -156,3 +170,4 @@
     };
   </script>
 </html>
+
