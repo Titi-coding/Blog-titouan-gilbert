@@ -43,15 +43,20 @@
       font-size: 1.5em;
     }
 
+  .dropdown {
+      display: flex;
+      align-items: center;
+    }
+    
     .dropdown a {
       text-decoration: none;
       margin-left: 1.5em;
       color: white;
+      transition: amm 0.3s ease-in-out;
     }
 
     .dropdown a:hover {
       transform: scale(1.1);
-      transition: all 0.3s ease-in-out;
     }
 
     .dropdown-button {
@@ -63,6 +68,10 @@
       cursor: pointer;
       border-radius: 5px;
       font-weight: bold;
+    }
+
+    .dropdown-button:hover {
+      transform: scale(1.1);
     }
 
     /* Conteneur des liens cachés */
@@ -81,6 +90,11 @@
       text-align: center;
       display: block;
       margin: 1em;
+    }
+
+    .dropdown-content a:hover {
+      transform: scale(1.1);
+      color: white;
     }
   </style>
   <header>
@@ -166,3 +180,4 @@
     };
   </script>
 </html>
+
