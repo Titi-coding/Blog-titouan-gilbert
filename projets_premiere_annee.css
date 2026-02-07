@@ -27,7 +27,7 @@ html {
 }
 
 .explain_projet1 p {
-  margin-top: 7vh;
+  margin-top: 1vh;
   font-size: 20px;
   padding: 20px;
 }
@@ -42,12 +42,12 @@ html {
   background-color: rgb(179, 90, 179);
   margin-right: 2em;
   display: inline-flex;
+  transition: transform 0.3s ease-in-out;
 }
 
 .explain_projet1 a:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: all 0.3s ease;
 }
 
 .pdf {
@@ -104,10 +104,11 @@ footer a {
   background-color: rgb(179, 90, 179);
   margin-right: 2em;
   display: inline-flex;
+
+  transition: transform 0.3s ease-in-out;
 }
 
 footer a:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: all 0.3s ease;
 }
