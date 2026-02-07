@@ -32,25 +32,6 @@ html {
   padding: 20px;
 }
 
-.explain_tableau a {
-  text-decoration: none;
-  margin-bottom: 1em;
-  color: black;
-  padding: 1em;
-  border-radius: 12px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgb(179, 90, 179);
-  margin-right: 2em;
-  display: inline-flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.explain_tableau a:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  
-}
-
 footer {
   color: #dbe8ff;
   max-width: 900px;
@@ -77,24 +58,27 @@ footer p {
   margin-bottom: 2em;
 }
 
+/* On groupe les deux sélecteurs pour le style de base */
+.explain_tableau a, 
 footer a {
-  text-decoration: none;
-  margin-bottom: 1em;
-  color: black;
-  padding: 1em;
-  border-radius: 12px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgb(179, 90, 179);
-  margin-right: 2em;
-  display: inline-flex;
-  transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: black;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(179, 90, 179);
+    margin-right: 2em;
+    display: inline-flex;
+    transition: transform 0.3s ease-in-out;
 }
 
+/* On groupe les deux sélecteurs pour le hover */
+.explain_tableau a:hover, 
 footer a:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+    cursor: pointer;
+    transform: scale(1.1);
 }
-
 
 
 
