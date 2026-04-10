@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes projets personnels</title>
+    <link rel="stylesheet" href="projet_infoware.css">
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding-top: 0px;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Image de fond */
+      background-image: url(ChatGPT\ Image\ 9\ janv.\ 2026\,\ 10_05_25.png);
+      background-repeat: no-repeat; /* éviter la répétition */
+      background-position: center; /* centrer l'image */
+      background-size: cover; /* adapte l'image à l'écran */
+    }
+
+    .bande {
+      display: flex;
+      align-items: center;
+      background-color: #000000;
+      padding: 10px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      position: fixed; /* toujours en haut de l'écran */
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 100%; /* prendre toute la largeur */
+      z-index: 1000; /* rester au-dessus des autres éléments */
+      display: flex;
+      flex-direction: line;
+      text-decoration: none;
+      justify-content: space-between;
+    }
+
+    .bande h1 {
+      font-size: 1.5em;
+    }
+
+    .dropdown a {
+      text-decoration: none;
+      margin-left: 1.5em;
+      color: white;
+    }
+
+    .dropdown a:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-button {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Conteneur des liens cachés */
+    .dropdown-content {
+      display: none; /* caché par défaut */
+      position: absolute;
+      background-color: #000000;
+      min-width: 13em;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: 1;
+      
+    }
+
+    .dropdown-content a {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      display: block;
+      margin: 1em;
+    }
+  </style>
+  <header>
+    <div class="bande">
+      <a class="lien_main_page" href="index.html">Blog Titouan Gilbert</a>
+
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">
+          Projets
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="projets_premiere_annee.html">Première année</a>
+          <a href="projets_deuxieme_annee.html">Deuxième année</a>
+          <a href="projets_perso.html">Projets personnels</a>
+        </div>
+        <a href="stage.html">Stages</a>
+        <a href="veille_techno.html">Veille Technologique</a>
+        <a href="competences.html">Tableau de compétences</a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+
+    <div class="explain_retrait_banque">
+      <h1>L'application Java InfoWare</h1>
+      <p>Le projet Infoware à coder en Java consistait à améliorer une application métier utilisable en entreprise afin de gérer les employés. <br>
+        Le projet permet d'ajouter, consulter, modifier, supprimer un utilisateur ou les trier selon leur service attitré. Il fonctionne en lien avec une base de données recensant les données de chaque salarié. <br>
+        Ci-dessous les différentes étapes expliquées une par une avec le projet exécutable téléchargeable ainsi qu'une image de l'interface principale de l'application.
+      </p>
+        <img src="img_infoware.png" alt="image_distrib">
+        <div class="explain_etapes_projets_infoware">
+            <h2>Les étapes du projets</h2>
+            <p>Ce projet contenait pas moins de 10 étapes, en passant par la consultation des salariés, la suppression, la modification de leurs données dans le cas où c'est nécessaire et l'ajout d'un nouveau salarié.</p>
+            <h3>Etape 0</h3>
+            <p>L'étape 0 était l'organisation, la constitution d'un binôme avec qui le projet allait se monter.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape0.pdf">Compte rendu de l'étape 0</a>
+            <h3>Etape 1</h3>
+            <p>L'étape 1 annonçait le début du projet en important la base de données fournie sur PhPMyAdmin via XAMPP ou d'autres logiciels pouvant créer un serveur Web directement sur la machine.</p>
+            <br><a href="compte_rendu_projet/G8_Dupé_Gilbert_E_1.pdf">Compte rendu de l'étape 1</a>
+            <h3>Etape 2</h3>
+            <p>L'étape 2 était l'entrée dans le vif du sujet en commençant à gérer du code, concevoir la méthode Categorie en respectant les paramètres inclus et ajouter les éléments nécessaires comme la méthode <strong>toString</strong> pour afficher les données stockées dans les différentes méthodes ou attributs.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape2.pdf">Compte rendu de l'étape 2</a>
+            <h3>Etape 3</h3>
+            <p>Pour l'étape 3, nous avions besoin de plus de maquettes afin de pouvoir agir directement sur la base de données, notamment la page de <strong>consultation</strong>, de <strong>suppression</strong>, la page d'<strong>ajout</strong> ou de <strong>modification</strong>.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape3.pdf">Compte rendu de l'étape 3</a>
+            <h3>Etape 4</h3>
+            <p>L'étape 4 demandait davantages de classes pour lier ces actions à la base de données dont les classes <strong>DaoCategorie</strong> et sa classe de test respective <strong>TestDaoCategorie</strong>. Le DAO(Data Access Object) est la propriété permettant de faire une liaison entre une base de données et une application dans le langage Java.</p>
+            <br><a href="compte_rendu_projet/G8_Dupé_Gilbert_E_4.pdf">Compte rendu de l'étape 4</a>
+            <h3>Etape 5</h3>
+            <p>L'étape 5 devait faire fonctionner un tri par service pour retrouver plus facilement les salariés avec une liste déroulante. En faisant remplir le tableau des salariés en visionnant la sélection du bouton déroulant le tri s'effectue par le code de catégorie qui récupère tous les salariés ayant le même code.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape5.pdf">Compte rendu de l'étape 5</a>
+            <h3>Etape 6</h3>
+            <p>Grâce à l'étape 6, la consultation de la fiche d'un salarié est possible et on obtient toutes les données comme son <strong>âge</strong>, son <strong>identité</strong> ou même sa <strong>fonction</strong>.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape6.pdf">Compte rendu de l'étape 6</a>
+            <h3>Etape 7</h3>
+            <p>L'étape 7 permettait de pouvoir supprimer un salarié en actualisatant la base de données et le tableau de l'application pour voir l'efficacité de l'action directement. On supprime grâce à son identifiant unique pour chaque utilisateur, ce qui permet de ne pas avoir de conflit en cas de même prénom ou de fonction.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape7.pdf">Compte rendu de l'étape 7</a>
+            <h3>Etape 8</h3>
+            <p>L'ajout d'un nouveau salarié arrive à cette étape, ajouter un salarié en incluant son identité, sa date d'embauche pour l'inclure dans la base de données.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape8.pdf">Compte rendu de l'étape 8</a>
+            <h3>Etape 9</h3>
+            <p>La modification d'un salarié était la dernière étape du projet mais le temps manquait, il permettait de modifier les données d'un client sans à changer directement dans la base de données.</p>
+            <h3>Etape 10</h3>
+            <p>L'étape finale étant de créer l'exécutable pour fournir à tout le monde le projet et de pouvoir l'essayer où l'on veut tant que la base de données est connectée.</p>
+            <br><a href="compte_rendu_projet/Dupé_Timéo_Gilbert_Titouan_Etape10.pdf">Compte rendu de l'étape 10</a>
+            <h4>Dans le dossier, se trouve l'exécutable ainsi que la base de données à copier / coller dans PhPMyAdmin.</h4>
+            <a href="projet_termine_executable_gilbert_titouan">Le projet Infoware</a>
+        </div>
+    </div>
+  </body>
+
+  <footer>
+      <h4>Blog de Titouan Gilbert</h4>
+      <p>Tous droits réservés à Titouan Gilbert</p>
+      <a href="https://titi-coding.github.io/">Mon portfolio</a>
+      <a href="CV_2025-12-02_Titouan_Gilbert.pdf">Mon CV</a>
+    </footer>
+  </body>
+
+  <script>
+    // Fonction pour afficher/masquer la liste
+    function toggleDropdown() {
+      const dropdown = document.getElementById("myDropdown");
+      dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Optionnel : fermer le menu si l'utilisateur clique ailleurs
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropdown-button")) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          if (dropdowns[i].style.display === "block") {
+            dropdowns[i].style.display = "none";
+          }
+        }
+      }
+    };
+  </script>
+</html>

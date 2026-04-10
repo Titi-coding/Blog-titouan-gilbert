@@ -1,0 +1,105 @@
+html {
+  margin-top: 3rem;
+}
+
+.lien_main_page {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.explain_retrait_banque {
+  color: rgb(214, 214, 214);
+  max-width: 900px;
+  margin: 60px auto 5%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: rgb(238, 237, 237);
+  background: transparent;
+  backdrop-filter: blur(12px); /* flou derrière le bouton */
+  -webkit-backdrop-filter: blur(0px);
+  max-width: 1200px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.explain_retrait_banque p {
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  max-width: 30em;
+}
+
+.explain_retrait_banque p,
+img {
+  display: inline-block;
+}
+
+.explain_retrait_banque img {
+  border-radius: 12px;
+}
+
+.explain_etapes_projets_infoware a {
+  text-decoration: none;
+  margin-bottom: 2em;
+  color: black;
+  padding: 1em;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(179, 90, 179);
+  margin-right: 2em;
+  display: inline-flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.explain_etapes_projets_infoware a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+footer {
+  color: #dbe8ff;
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background: transparent;
+  backdrop-filter: blur(12px); /* flou derrière le bouton */
+  -webkit-backdrop-filter: blur(0px);
+  max-width: 800px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+footer h4 {
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 19px;
+  margin-bottom: 2em;
+}
+
+footer a {
+  text-decoration: none;
+  margin-bottom: 2em;
+  color: black;
+  padding: 1em;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(179, 90, 179);
+  margin-right: 2em;
+  display: inline-flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
