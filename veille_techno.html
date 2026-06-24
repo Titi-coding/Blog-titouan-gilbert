@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -34,28 +34,25 @@
       width: 100%; /* prendre toute la largeur */
       z-index: 1000; /* rester au-dessus des autres éléments */
       display: flex;
+      gap: 25px;
       flex-direction: line;
       text-decoration: none;
       justify-content: space-between;
     }
-
     .bande h1 {
-      font-size: 1.5em;
+      padding-left: 1em;
     }
 
     .dropdown a {
       text-decoration: none;
       margin-left: 1.5em;
-      color: rgb(192,192,192);
-    }
-
-    .dropdown a:hover {
       color: white;
+      transition: all 0.3s ease-in-out;
     }
 
     .dropdown-button {
       background-color: #000000;
-      color: rgb(192, 192, 192);
+      color: rgb(255, 255, 255);
       padding: 10px;
       font-size: 16px;
       border: none;
@@ -64,27 +61,26 @@
       font-weight: bold;
     }
 
+    .dropdown a:hover {
+      transform: scale(1.1);
+    }
+
     /* Conteneur des liens cachés */
     .dropdown-content {
       display: none; /* caché par défaut */
       position: absolute;
-      background-color: #000000;
+      background-color: #252525;
       min-width: 13em;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       z-index: 1;
-      
     }
 
     .dropdown-content a {
-      color: rgb(192, 192, 192);
+      color: rgb(255, 255, 255);
       text-align: center;
       display: block;
       margin: 1em;
-    }
-
-    .dropdown-content a:hover {
-      color: white;
     }
   </style>
   <header>
@@ -109,25 +105,41 @@
   <body>
     <div class="explain_veille">
       <h2>La veille technologique</h2>
-      <h4>Les processeurs et cartes graphiques</h4>
+      <h3>Du Gaming à l'Intelligence Artificielle : la mutation du GPU</h3>
       <p>
-        D'une année à l'autre, que ce soit de petits changements, les composants
-        sont plus puissants et permettent d'effectuer encore plus de tâches
-        simultanément. Revenons en 1971 à l'arrivée des premiers processeurs
-        comme le Intel 4004.
+        Pendant des décennies, la carte graphique (GPU) a été l'apanage des
+        joueurs et des créateurs visuels. Aujourd'hui, elle est devenue la pièce
+        maîtresse de la révolution de l'intelligence artificielle. En 2026, nous
+        ne parlons plus seulement de puissance brute, mais d'une spécialisation
+        matérielle qui redéfinit notre rapport à l'informatique.
       </p>
+      <h4>L'IA locale : le nouveau standard</h4>
       <p>
-        Ils étaient mono-utilisateur et mono-tâche, c'est à dire que chaque
-        tâche était effectuée les unes après les autres sans pouvoir en gérer
-        plusieurs à la fois. Le fait qu'ils soient mono-utilisateur au contraire
-        d'aujourd'hui était handicapant car il y avait une seule session pour
-        plusieurs personnes, d'où l'évolution de maintenant.
+        La grande tendance actuelle est le passage du Cloud vers le Edge AI
+        (l'IA en local). Grâce aux nouvelles architectures comme la série RTX 50
+        ou les dernières Radeon, il n'est plus nécessaire d'envoyer ses données
+        sur les serveurs de la Silicon Valley. Votre carte graphique est capable
+        de traiter des modèles de langage complexes directement sur votre
+        bureau, garantissant confidentialité et rapidité.
       </p>
+      <h4>Comprendre les piliers de cette puissance</h4>
       <p>
-        Parlons du côté des caractéristiques. Les processeurs avaient une très
-        faible capacité qui leur permettait de faire une petite tache ne
-        consommant pas trop arrive à présent à plus de 4GHz de fréquence de
-        noyau, permettant un multi-tâche très soutenu et rapide !
+        Pour saisir l'évolution actuelle, trois piliers techniques sont
+        essentiels : <br /><strong>Les Cœurs Tensor</strong> : Contrairement aux
+        cœurs de calcul classiques, ces unités sont des spécialistes des
+        mathématiques matricielles, la base même du fonctionnement des réseaux
+        de neurones. Ils permettent d'accélérer l'inférence (le moment où l'IA
+        répond à une requête) de façon exponentielle. <br /><strong
+          >La Mémoire HBM4</strong
+        >
+        : L'IA est "affamée" de données. La technologie HBM4 (High Bandwidth
+        Memory) agit comme une autoroute ultra-large, permettant de charger des
+        modèles d'IA massifs sans que la mémoire ne devienne un goulot
+        d'étranglement. <br /><strong>Le NPU (Neural Processing Unit)</strong> :
+        Souvent intégré aux côtés du GPU, ce processeur "basse consommation"
+        prend le relais pour les tâches de fond (comme la suppression de bruit
+        en visio), laissant toute la puissance du GPU disponible pour les tâches
+        de création ou de calcul intensif.
       </p>
     </div>
 
@@ -160,5 +172,3 @@
     };
   </script>
 </html>
-
-

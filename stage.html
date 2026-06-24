@@ -34,56 +34,59 @@
       width: 100%; /* prendre toute la largeur */
       z-index: 1000; /* rester au-dessus des autres éléments */
       display: flex;
+      gap: 25px;
       flex-direction: line;
       text-decoration: none;
       justify-content: space-between;
     }
-
     .bande h1 {
-      font-size: 1.5em;
+      padding-left: 1em;
     }
 
     .dropdown a {
       text-decoration: none;
       margin-left: 1.5em;
-      color: rgb(192,192,192);
+      color: rgb(255, 255, 255);
+      transition: all 0.3s ease-in-out;
     }
 
     .dropdown a:hover {
-      color: white;
+      transform: scale(1.1);
     }
 
     .dropdown-button {
       background-color: #000000;
-      color: rgb(192, 192, 192);
+      color: rgb(255, 255, 255);
       padding: 10px;
       font-size: 16px;
       border: none;
       cursor: pointer;
       border-radius: 5px;
       font-weight: bold;
+      transition: all 0.3s ease-in-out;
     }
 
     /* Conteneur des liens cachés */
     .dropdown-content {
       display: none; /* caché par défaut */
       position: absolute;
-      background-color: #000000;
+      background-color: #252525;
       min-width: 13em;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       z-index: 1;
-      
     }
 
     .dropdown-content a {
-      color: rgb(192, 192, 192);
+      color: rgb(255, 255, 255);
       text-align: center;
       display: block;
       margin: 1em;
+      transition: 0.3s ease-in-out;
     }
 
     .dropdown-content a:hover {
+      transform: scale(1.1);
       color: white;
     }
   </style>
@@ -109,7 +112,9 @@
   <body>
     <div class="explain_stage">
       <h2>Mes stages</h2>
-      <p>A venir !</p>
+      <h3>Projet Excel</h3>
+      <p>Le projet consistait à créer une application web permettant de recencer les congés des salariés de l'administration.</p>
+      <a href="projet_excel.html" class="">Projet Excel</a>
     </div>
 
     <footer>
@@ -141,5 +146,3 @@
     };
   </script>
 </html>
-
-
